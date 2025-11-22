@@ -48,11 +48,15 @@ struct BananaClickerApp: App {
                             ProgressView()
                                 .scaleEffect(1.5)
                                 .tint(.white)
+
+                            Text("V2.0")
+                                .font(.headline)
+                                .foregroundStyle(.white)
                         }
                     }
                 } else if authManager.isAuthenticated {
-                    // Main app
-                    MainTabView()
+                    // Main app - V2.0!
+                    MainTabViewV2()
                         .modelContainer(modelContainer)
                 } else {
                     // Login screen
