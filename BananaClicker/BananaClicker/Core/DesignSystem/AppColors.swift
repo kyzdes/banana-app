@@ -12,50 +12,76 @@ extension Color {
     // MARK: - Banana Theme Colors
 
     /// Primary banana yellow
-    static let bananaPrimary = Color("BananaPrimary", bundle: nil)
+    static var bananaPrimary: Color {
+        Color("BananaPrimary", bundle: nil)
+    }
 
     /// Secondary cream color
-    static let bananaSecondary = Color("BananaSecondary", bundle: nil)
+    static var bananaSecondary: Color {
+        Color("BananaSecondary", bundle: nil)
+    }
 
     // MARK: - Accent Colors
 
     /// Success/Friend indicator green
-    static let accentGreen = Color.green
+    static var accentGreen: Color { .green }
 
     /// Error/Warning red
-    static let accentRed = Color.red
+    static var accentRed: Color { .red }
 
     /// Info/Link blue
-    static let accentBlue = Color.blue
+    static var accentBlue: Color { .blue }
 
     // MARK: - UI Colors
 
     /// Primary background
-    static let appBackground = Color(uiColor: .systemBackground)
+    static var appBackground: Color {
+        Color(uiColor: .systemBackground)
+    }
 
     /// Secondary background (cards, sections)
-    static let secondaryBackground = Color(uiColor: .secondarySystemBackground)
+    static var secondaryBackground: Color {
+        Color(uiColor: .secondarySystemBackground)
+    }
 
     /// Tertiary background (grouped backgrounds)
-    static let tertiaryBackground = Color(uiColor: .tertiarySystemBackground)
+    static var tertiaryBackground: Color {
+        Color(uiColor: .tertiarySystemBackground)
+    }
 
     /// Primary text
-    static let primaryText = Color(uiColor: .label)
+    static var primaryText: Color {
+        Color(uiColor: .label)
+    }
 
     /// Secondary text
-    static let secondaryText = Color(uiColor: .secondaryLabel)
+    static var secondaryText: Color {
+        Color(uiColor: .secondaryLabel)
+    }
 
     /// Tertiary text
-    static let tertiaryText = Color(uiColor: .tertiaryLabel)
+    static var tertiaryText: Color {
+        Color(uiColor: .tertiaryLabel)
+    }
 
     /// Separator/divider
-    static let separator = Color(uiColor: .separator)
+    static var separator: Color {
+        Color(uiColor: .separator)
+    }
 
     // MARK: - Medal Colors
 
-    static let goldMedal = Color(red: 1.0, green: 0.84, blue: 0.0)
-    static let silverMedal = Color(red: 0.75, green: 0.75, blue: 0.75)
-    static let bronzeMedal = Color(red: 0.80, green: 0.50, blue: 0.20)
+    static var goldMedal: Color {
+        Color(red: 1.0, green: 0.84, blue: 0.0)
+    }
+
+    static var silverMedal: Color {
+        Color(red: 0.75, green: 0.75, blue: 0.75)
+    }
+
+    static var bronzeMedal: Color {
+        Color(red: 0.80, green: 0.50, blue: 0.20)
+    }
 
     // MARK: - Custom Initializer for Hex
 
@@ -88,19 +114,23 @@ extension Color {
 
 extension LinearGradient {
     /// Banana gradient from top to bottom
-    static let bananaGradient = LinearGradient(
-        colors: [Color(hex: "#FFE66D"), Color(hex: "#FFD93D")],
-        startPoint: .top,
-        endPoint: .bottom
-    )
+    static var bananaGradient: LinearGradient {
+        LinearGradient(
+            colors: [Color(hex: "#FFE66D"), Color(hex: "#FFD93D")],
+            startPoint: .top,
+            endPoint: .bottom
+        )
+    }
 
     /// Card gradient with blur effect
-    static let cardGradient = LinearGradient(
-        colors: [
-            Color.white.opacity(0.2),
-            Color.white.opacity(0.1)
-        ],
-        startPoint: .topLeading,
-        endPoint: .bottomTrailing
-    )
+    static var cardGradient: LinearGradient {
+        LinearGradient(
+            colors: [
+                Color.white.opacity(0.2),
+                Color.white.opacity(0.1)
+            ],
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        )
+    }
 }

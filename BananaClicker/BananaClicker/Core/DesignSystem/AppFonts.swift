@@ -12,60 +12,90 @@ extension Font {
     // MARK: - Display Fonts
 
     /// Extra large title (click counter)
-    static let clickCounter = Font.system(size: 72, weight: .bold, design: .rounded)
-        .monospacedDigit()
+    static var clickCounter: Font {
+        Font.system(size: 72, weight: .bold, design: .rounded)
+            .monospacedDigit()
+    }
 
     /// Large display text
-    static let displayLarge = Font.system(.largeTitle, design: .rounded, weight: .bold)
+    static var displayLarge: Font {
+        Font.system(.largeTitle, design: .rounded, weight: .bold)
+    }
 
     /// Medium display text
-    static let displayMedium = Font.system(.title, design: .rounded, weight: .bold)
+    static var displayMedium: Font {
+        Font.system(.title, design: .rounded, weight: .bold)
+    }
 
     /// Small display text
-    static let displaySmall = Font.system(.title2, design: .rounded, weight: .semibold)
+    static var displaySmall: Font {
+        Font.system(.title2, design: .rounded, weight: .semibold)
+    }
 
     // MARK: - Headline Fonts
 
     /// Large headline
-    static let headlineLarge = Font.system(.title3, design: .rounded, weight: .semibold)
+    static var headlineLarge: Font {
+        Font.system(.title3, design: .rounded, weight: .semibold)
+    }
 
     /// Medium headline
-    static let headlineMedium = Font.system(.headline, design: .rounded, weight: .semibold)
+    static var headlineMedium: Font {
+        Font.system(.headline, design: .rounded, weight: .semibold)
+    }
 
     /// Small headline
-    static let headlineSmall = Font.system(.subheadline, design: .rounded, weight: .medium)
+    static var headlineSmall: Font {
+        Font.system(.subheadline, design: .rounded, weight: .medium)
+    }
 
     // MARK: - Body Fonts
 
     /// Large body text
-    static let bodyLarge = Font.system(.body, design: .default, weight: .regular)
+    static var bodyLarge: Font {
+        Font.system(.body, design: .default, weight: .regular)
+    }
 
     /// Medium body text (default)
-    static let bodyMedium = Font.system(.callout, design: .default, weight: .regular)
+    static var bodyMedium: Font {
+        Font.system(.callout, design: .default, weight: .regular)
+    }
 
     /// Small body text
-    static let bodySmall = Font.system(.footnote, design: .default, weight: .regular)
+    static var bodySmall: Font {
+        Font.system(.footnote, design: .default, weight: .regular)
+    }
 
     // MARK: - Label Fonts
 
     /// Large label
-    static let labelLarge = Font.system(.subheadline, design: .default, weight: .medium)
+    static var labelLarge: Font {
+        Font.system(.subheadline, design: .default, weight: .medium)
+    }
 
     /// Medium label
-    static let labelMedium = Font.system(.caption, design: .default, weight: .medium)
+    static var labelMedium: Font {
+        Font.system(.caption, design: .default, weight: .medium)
+    }
 
     /// Small label
-    static let labelSmall = Font.system(.caption2, design: .default, weight: .regular)
+    static var labelSmall: Font {
+        Font.system(.caption2, design: .default, weight: .regular)
+    }
 
     // MARK: - Special Fonts
 
     /// Monospaced numbers (for stats)
-    static let statsNumber = Font.system(.title3, design: .rounded, weight: .bold)
-        .monospacedDigit()
+    static var statsNumber: Font {
+        Font.system(.title3, design: .rounded, weight: .bold)
+            .monospacedDigit()
+    }
 
     /// Rank number
-    static let rankNumber = Font.system(.title2, design: .rounded, weight: .heavy)
-        .monospacedDigit()
+    static var rankNumber: Font {
+        Font.system(.title2, design: .rounded, weight: .heavy)
+            .monospacedDigit()
+    }
 }
 
 // MARK: - Text Styles
